@@ -17,6 +17,15 @@ export default {
     },
     fontFamily: {
       montserrat: "'Montserrat', sans-serif"
+    },
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px"
+    },
+    container: {
+      center: true
     }
   },
   plugins: [],
