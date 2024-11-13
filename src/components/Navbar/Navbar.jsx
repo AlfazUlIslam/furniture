@@ -20,14 +20,15 @@ const Navbar = () => {
                 {/* logo */}
                 <div>
                     <img 
-                        className="w-[100px]"
+                        className="w-[100px] sm:w-[120px] 
+                        xl:w-auto"
                         src={logo} 
                         alt="Furniture Logo" 
                     />
                 </div>
                 {/* nav links */}
                 <ul className="hidden md:flex md:justify-center 
-                md:items-center md:gap-[70px]">
+                md:items-center md:gap-[35px] lg:gap-[70px]">
                     <NavLink 
                         content={"Home"}
                         linkRef={"home"}

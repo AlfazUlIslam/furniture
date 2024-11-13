@@ -6,11 +6,12 @@ const NavLink = (props) => {
         <li>
             <a 
                 className="font-montserrat font-semibold 
-                text-[14px] text-lightBlack relative after:content-[''] 
+                text-[12px] text-lightBlack relative after:content-[''] 
                 after:w-[0px] after:h-[1px] after:bg-lightBlue 
                 after:absolute after:left-0 after:bottom-[-3px] 
                 after:transition-all after:duration-1000 
-                hover:text-lightBlue hover:after:w-[100%]"
+                hover:text-lightBlue hover:after:w-[100%] 
+                lg:text-[14px]"
                 href={`#${linkRef}`}
             >
                 {content}
