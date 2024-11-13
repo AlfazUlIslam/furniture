@@ -1,45 +1,95 @@
+import { useState } from "react"
 import { Container } from "../../containers"
 import NavLink from "../NavLink/NavLink"
+import { IoMenuSharp, IoCloseSharp } from "react-icons/io5"
 import { logo } from "../../assets"
 import "./Navbar.css"
 
 const Navbar = () => {
-  return (
-    // navbar
-    <nav>
-        <Container styles={`px-6 py-10 flex justify-between items-center`}>
-            {/* logo */}
-            <div>
-                <img 
-                    src={logo} 
-                    alt="Furniture Logo" 
-                />
-            </div>
-            {/* nav links */}
-            <ul className="flex justify-center items-center gap-[70px]">
-                <NavLink 
-                    content={"Home"}
-                    linkRef={"home"}
-                />
-                <NavLink 
-                    content={"Collection"}
-                    linkRef={"collection"}
-                />
-                <NavLink 
-                    content={"Services"}
-                    linkRef={"services"}
-                />
-                <NavLink 
-                    content={"Products"}
-                    linkRef={"products"}
-                />
-                <NavLink 
-                    content={"Newsletter"}
-                    linkRef={"newsletter"}
-                />
-            </ul>
-        </Container>
-    </nav>
-  )
+    const [toggle, setToggle] = useState(false)
+        
+    const handleToggle = () => {
+        setToggle(prev => !prev)
+    }
+
+    return (
+        // navbar
+        <nav>
+            <Container styles={`px-6 py-10 flex justify-between 
+            items-center`}>
+                {/* logo */}
+                <div>
+                    <img 
+                        className="w-[100px]"
+                        src={logo} 
+                        alt="Furniture Logo" 
+                    />
+                </div>
+                {/* nav links */}
+                <ul className="hidden md:flex md:justify-center 
+                md:items-center md:gap-[70px]">
+                    <NavLink 
+                        content={"Home"}
+                        linkRef={"home"}
+                    />
+                    <NavLink 
+                        content={"Collection"}
+                        linkRef={"collection"}
+                    />
+                    <NavLink 
+                        content={"Services"}
+                        linkRef={"services"}
+                    />
+                    <NavLink 
+                        content={"Products"}
+                        linkRef={"products"}
+                    />
+                    <NavLink 
+                        content={"Newsletter"}
+                        linkRef={"newsletter"}
+                    />
+                </ul>
+                {/* mobile menu */}
+                <div className="relative md:hidden">
+                    {/* mobile menu button */}
+                    <button
+                        className="text-3xl"
+                        onClick={handleToggle}
+                    >
+                        {toggle ? <IoCloseSharp /> : <IoMenuSharp />}
+                    </button>
+                    {/* mobile menu links */}
+                    <ul 
+                        className="min-w-[9rem] bg-white border 
+                        border-slate-200 rounded-xl shadow-xl py-6 
+                        flex-col items-center gap-4 absolute 
+                        top-14 -right-4 slide-up"
+                        style={{display: `${toggle ? "flex" : "none"}`}}
+                    >
+                        <NavLink 
+                            content={"Home"}
+                            linkRef={"home"}
+                        />
+                        <NavLink 
+                            content={"Collection"}
+                            linkRef={"collection"}
+                        />
+                        <NavLink 
+                            content={"Services"}
+                            linkRef={"services"}
+                        />
+                        <NavLink 
+                            content={"Products"}
+                            linkRef={"products"}
+                        />
+                        <NavLink 
+                            content={"Newsletter"}
+                            linkRef={"newsletter"}
+                        />
+                    </ul>
+                </div>
+            </Container>
+        </nav>
+    )
 }
 export default Navbar
