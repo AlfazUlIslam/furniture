@@ -12,6 +12,7 @@ export default {
         darkBlue: "#03344F",
         lightBlack: "#333333",
         lightGray: "#F2F5FF",
+        mediumGray: "#DFE9F4",
         darkGray: "#666666"
       }
     },
