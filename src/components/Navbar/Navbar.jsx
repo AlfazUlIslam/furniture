@@ -15,8 +15,8 @@ const Navbar = () => {
     return (
         // navbar
         <nav>
-            <Container styles={`px-6 py-10 flex justify-between 
-            items-center`}>
+            <Container styles={`px-6 py-6 flex justify-between 
+            items-center md:py-10`}>
                 {/* logo */}
                 <div>
                     <img 
