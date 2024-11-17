@@ -3,7 +3,6 @@ const SectionButton = (props) => {
     
     return (
         // section button
-        // w-[230px] h-[70px] rounded-[50px] mx-0 text-[16px]
         <button className="w-[120px] h-[40px] rounded-[30px] 
         bg-lightBlue mx-auto flex justify-center items-center 
         font-montserrat font-bold text-[10px] text-white 
