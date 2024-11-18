@@ -9,9 +9,9 @@ const Features = () => {
         id="features"
         className="bg-lightGray"
     >
-        {/* flex-row justify-between gap-0 */}
         <Container styles={`px-6 py-[50px] flex flex-col 
-        items-center gap-[50px]`}>
+        items-center gap-[50px] sm:gap-[80px] 
+        md:flex-row md:justify-between md:gap-0`}>
             <Feature 
                 image={truck}
                 altText={"Truck"}

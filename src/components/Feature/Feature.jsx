@@ -3,14 +3,13 @@ const Feature = (props) => {
     
     return (
         // feature
-        // gap-[30px]
         <div className="flex justify-center items-center 
-        gap-[20px]">
+        gap-[20px] xl:gap-[30px]">
             {/* feature image */}
             <div>
-                {/* w-auto */}
                 <img
-                    className="w-[40px]"
+                    className="w-[40px] sm:w-[60px] 
+                    md:w-[40px] xl:w-auto"
                     src={image} 
                     alt={altText} 
                 />
@@ -19,15 +18,15 @@ const Feature = (props) => {
             <div className="flex flex-col justify-center 
             items-start gap-[6px]">
                 {/* feature title */}
-                {/* text-[24px] */}
                 <h5 className="font-montserrat font-semibold 
-                text-[16px] text-lightBlack">
+                text-[16px] text-lightBlack sm:text-[20px] 
+                md:text-[16px] xl:text-[24px]">
                     {title}
                 </h5>
                 {/* feature description */}
-                {/* text-[16px] */}
                 <p className="font-montserrat font-normal 
-                text-[10px] text-lightBlack">
+                text-[10px] text-lightBlack sm:text-[14px] 
+                md:text-[10px] xl:text-[16px]">
                     {desc}
                 </p>
             </div>
