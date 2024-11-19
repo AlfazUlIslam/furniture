@@ -1,3 +1,6 @@
 export { default as Navbar } from "./Navbar/Navbar"
 export { default as SectionButton } from "./SectionButton/SectionButton"
 export { default as Feature } from "./Feature/Feature"
+export { default as Heading } from "./Heading/Heading"
+export { default as SectionDescription } from "./SectionDescription/SectionDescription"
+export { default as InspirationImage } from "./InspirationImage/InspirationImage"
