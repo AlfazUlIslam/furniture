@@ -38,12 +38,12 @@ const Navbar = () => {
                         linkRef={"collection"}
                     />
                     <NavLink 
-                        content={"Services"}
-                        linkRef={"services"}
-                    />
-                    <NavLink 
                         content={"Products"}
                         linkRef={"products"}
+                    />
+                    <NavLink 
+                        content={"Services"}
+                        linkRef={"services"}
                     />
                     <NavLink 
                         content={"Newsletter"}
@@ -76,12 +76,12 @@ const Navbar = () => {
                             linkRef={"collection"}
                         />
                         <NavLink 
-                            content={"Services"}
-                            linkRef={"services"}
-                        />
-                        <NavLink 
                             content={"Products"}
                             linkRef={"products"}
+                        />
+                        <NavLink 
+                            content={"Services"}
+                            linkRef={"services"}
                         />
                         <NavLink 
                             content={"Newsletter"}
