@@ -3,9 +3,9 @@ const InspirationImage = (props) => {
         
     return (
         // inspiration image
+        // w-auto
         <img 
-            className="cursor-pointer trnasition-all 
-            duration-1000 hover:translate-y-[-38px]"
+            className="w-[280px]"
             src={image} 
             alt={altText} 
         />

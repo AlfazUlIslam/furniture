@@ -3,8 +3,9 @@ const Heading = (props) => {
         
     return (
         // heading
+        // text-[32px] 
         <div className={`font-montserrat font-bold 
-        text-[32px] text-lightBlack ${styles}`}>
+        text-[24px] text-lightBlack ${styles}`}>
             {content}
         </div>
     )
