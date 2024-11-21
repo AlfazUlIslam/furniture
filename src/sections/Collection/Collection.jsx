@@ -11,15 +11,15 @@ const Collection = () => {
             <Heading
                 content={"Inspiration Collection"}
             />
-            {/* mt-[20px] mb-[90px] */}
             <SectionDescription 
-                styles={"mt-[14px] mb-[50px] text-center"}
+                styles={`mt-[14px] mb-[50px] text-center 
+                xl:mt-[20px] xl:mb-[90px]`}
                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
             />
             {/* collection images */}
-            {/* flex-row gap-[40px] */}
             <div className="flex flex-col justify-center 
-            items-center gap-[20px]">
+            items-center gap-[20px] sm:gap-[40px] md:flex-row 
+            md:gap-[20px] xl:gap-[40px]">
                 <InspirationImage
                     image={inspirationImage1}
                     altText={"Bedroom"}

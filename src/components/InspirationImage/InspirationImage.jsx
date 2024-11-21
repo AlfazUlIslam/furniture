@@ -3,9 +3,9 @@ const InspirationImage = (props) => {
         
     return (
         // inspiration image
-        // w-auto
         <img 
-            className="w-[280px]"
+            className="w-[280px] sm:w-[380px] 
+            md:w-[230px] lg:w-[300px] xl:w-auto"
             src={image} 
             alt={altText} 
         />
