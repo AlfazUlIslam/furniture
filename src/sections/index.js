@@ -1,3 +1,4 @@
 export { default as Hero } from "./Hero/Hero"
 export { default as Features } from "./Features/Features"
 export { default as Collection } from "./Collection/Collection"
+export { default as YourSpace } from "./YourSpace/YourSpace"
