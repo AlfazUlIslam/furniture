@@ -3,19 +3,19 @@ const ProductsCard = (props) => {
         
     return (
         // Products card
-        // gap-[30px]
-        <div className="flex flex-col items-center gap-[15px]">
+        <div className="flex flex-col items-center gap-[15px] 
+        xl:gap-[30px]">
             {/* Products card image */}
-            {/* w-auto */}
             <img 
-                className="w-[250px]"
+                className="w-[250px] sm:w-[400px] 
+                md:w-[250px] xl:w-auto"
                 src={image} 
                 alt={altText} 
             />
             {/* Products title */}
-            {/* text-[24px] */}
             <h5 className="font-montserrat font-semibold 
-            text-[18px] text-lightBlack">
+            text-[18px] text-lightBlack sm:text-[24px] 
+            md:text-[18px] xl:text-[24px]">
                 {title}
             </h5>
         </div>
