@@ -11,13 +11,15 @@ const Products = () => {
             <Heading 
                 content={"Browse The Range"}
             />
+            {/* w-auto mt-[20px] mb-[50px] */}
             <SectionDescription 
-                styles={`mt-[20px] mb-[50px]`}
+                styles={`w-[280px] mt-[10px] mb-[30px] text-center`}
                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
             />
             {/* Products cards */}
-            <div className="flex justify-center items-center 
-            gap-6">
+            {/* flex-row */}
+            <div className="flex flex-col justify-center 
+            items-center gap-6">
                 <ProductsCard 
                     image={browseRangeImage1}
                     altText={"Dinning products"}
