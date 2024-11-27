@@ -10,13 +10,15 @@ const Services = () => {
             <Heading
                 content={"How It Works"}
             />
+            {/* w-auto mt-[20px] mb-[50px] */}
             <SectionDescription 
-                styles={`mt-[20px] mb-[50px]`}
+                styles={`w-[280px] mt-[10px] mb-[25px] text-center`}
                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
             />
             {/* Services cards */}
-            <div className="flex justify-center items-center 
-            gap-6">
+            {/* flex-row gap-6 */}
+            <div className="flex flex-col justify-center items-center 
+            gap-20">
                 <ServicesCard
                     image={howItWorksImage1}
                     altText={"Purchase securely"}
