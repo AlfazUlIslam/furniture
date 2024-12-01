@@ -1,10 +1,10 @@
 const SmallTitle = (props) => {
-    const { content } = props
+    const { styles, content } = props
         
     return (
         // Small title
-        <div className="font-montserrat font-bold text-[24px] 
-        text-white">
+        <div className={`${styles} font-montserrat font-bold text-[24px] 
+        text-white`}>
             {content}
         </div>
     )

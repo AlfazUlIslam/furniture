@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     // Footer
     <footer className="bg-darkBlue">
-        <Container styles={`px-6 pt-[50px] pb-[90px] flex gap-10`}>
+        <Container styles={`px-6 pt-[50px] pb-[90px] flex gap-4`}>
             <ColumnOne styles={`flex flex-col gap-10`}>
                 {/* Column content */}
                 <div className="flex flex-col items-start gap-[28px]">
@@ -35,11 +35,13 @@ const Footer = () => {
                     </div>
                 </div>
             </ColumnOne>
-            <ColumnTwo styles={`flex flex-col items-start gap-[35px]`}>
-                <SmallTitle content={"Instagram Shop"} />
+            <ColumnTwo styles={`flex flex-col gap-[35px]`}>
+                <SmallTitle
+                    content={"Instagram Shop"} 
+                />
                 {/* Column two images */}
                 <div className="flex justify-center items-center 
-                gap-[20px]">
+                gap-[10px]">
                     <FooterImage 
                         image={footerImage1}
                         altText={"Kids room furniture"}
