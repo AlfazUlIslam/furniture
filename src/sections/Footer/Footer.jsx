@@ -7,26 +7,28 @@ const Footer = () => {
   return (
     // Footer
     <footer className="bg-darkBlue">
-        {/* flex-row gap-4 */}
-        <Container styles={`px-6 pt-[50px] pb-[90px] flex flex-col gap-16`}>
-            {/* items-start */}
-            <ColumnOne styles={`flex flex-col items-center gap-10`}>
-                {/* Column content */}
-                {/* items-start gap-[28px] */}
-                <div className="flex flex-col items-center gap-[14px]">
+        <Container styles={`px-6 pt-[50px] 
+        pb-[90px] flex flex-col gap-16 md:flex-row 
+        md:justify-between lg:gap-0 xl:gap-4`}>
+            <ColumnOne styles={`flex flex-col items-center gap-10 
+            md:items-start lg:w-1/2 lg:pl-6`}>
+                {/* Column one content */}
+                <div className="flex flex-col items-center gap-[14px] 
+                md:items-start gap-[28px]">
                     <SmallTitle 
                         content={"Beauty Care"}
                     />
-                    {/* Column content description */}
-                    {/* w-[400px] text-[16px] leading-[35px] text-start */}
+                    {/* Column one content description */}
                     <p className="w-[280px] font-montserrat font-normal 
-                    text-[12px] leading-[25px] text-white text-center">
+                    text-[12px] leading-[25px] text-white text-center 
+                    sm:w-[400px] sm:text-[16px] sm:leading-[35px]
+                    md:w-[280px] md:text-start lg:w-[400px]">
                         Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                     </p>
                 </div>
                 {/* Follow us */}
-                {/* items-start gap-[28px] */}
-                <div className="flex flex-col items-center gap-[14px]">
+                <div className="flex flex-col items-center gap-[14px] 
+                md:items-start xl:gap-[28px]">
                     <SmallTitle
                         content={"Follow Us"}
                     />
@@ -40,15 +42,15 @@ const Footer = () => {
                     </div>
                 </div>
             </ColumnOne>
-            {/* gap-[35px] */}
-            <ColumnTwo styles={`flex flex-col items-center gap-[14px]`}>
+            <ColumnTwo styles={`flex flex-col items-center 
+            gap-[14px] md:items-start lg:w-1/2 xl:gap-[35px]`}>
                 <SmallTitle
                     content={"Instagram Shop"} 
                 />
                 {/* Column two images */}
-                {/* flex-no-wrap flex-row */}
                 <div className="flex flex-wrap justify-center 
-                items-center gap-[10px]">
+                items-center gap-[10px] md:justify-start 
+                xl:flex-nowrap">
                     <FooterImage 
                         image={footerImage1}
                         altText={"Kids room furniture"}

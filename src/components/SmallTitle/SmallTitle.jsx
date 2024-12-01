@@ -3,9 +3,8 @@ const SmallTitle = (props) => {
         
     return (
         // Small title
-        // text-[24px]
         <div className={`${styles} font-montserrat font-bold text-[20px] 
-        text-white`}>
+        text-white sm:text-[24px]`}>
             {content}
         </div>
     )
