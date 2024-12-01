@@ -7,21 +7,26 @@ const Footer = () => {
   return (
     // Footer
     <footer className="bg-darkBlue">
-        <Container styles={`px-6 pt-[50px] pb-[90px] flex gap-4`}>
-            <ColumnOne styles={`flex flex-col gap-10`}>
+        {/* flex-row gap-4 */}
+        <Container styles={`px-6 pt-[50px] pb-[90px] flex flex-col gap-16`}>
+            {/* items-start */}
+            <ColumnOne styles={`flex flex-col items-center gap-10`}>
                 {/* Column content */}
-                <div className="flex flex-col items-start gap-[28px]">
+                {/* items-start gap-[28px] */}
+                <div className="flex flex-col items-center gap-[14px]">
                     <SmallTitle 
                         content={"Beauty Care"}
                     />
                     {/* Column content description */}
-                    <p className="w-[400px] font-montserrat font-normal 
-                    text-[16px] leading-[35px] text-white">
+                    {/* w-[400px] text-[16px] leading-[35px] text-start */}
+                    <p className="w-[280px] font-montserrat font-normal 
+                    text-[12px] leading-[25px] text-white text-center">
                         Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                     </p>
                 </div>
                 {/* Follow us */}
-                <div className="flex flex-col items-start gap-[28px]">
+                {/* items-start gap-[28px] */}
+                <div className="flex flex-col items-center gap-[14px]">
                     <SmallTitle
                         content={"Follow Us"}
                     />
@@ -35,13 +40,15 @@ const Footer = () => {
                     </div>
                 </div>
             </ColumnOne>
-            <ColumnTwo styles={`flex flex-col gap-[35px]`}>
+            {/* gap-[35px] */}
+            <ColumnTwo styles={`flex flex-col items-center gap-[14px]`}>
                 <SmallTitle
                     content={"Instagram Shop"} 
                 />
                 {/* Column two images */}
-                <div className="flex justify-center items-center 
-                gap-[10px]">
+                {/* flex-no-wrap flex-row */}
+                <div className="flex flex-wrap justify-center 
+                items-center gap-[10px]">
                     <FooterImage 
                         image={footerImage1}
                         altText={"Kids room furniture"}
@@ -55,7 +62,7 @@ const Footer = () => {
                         altText={"Woolen wall decor"}
                     />
                     <FooterImage 
-                        image={footerImage1}
+                        image={footerImage4}
                         altText={"Kitchen furniture"}
                     />
                 </div>
