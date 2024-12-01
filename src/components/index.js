@@ -6,3 +6,6 @@ export { default as SectionDescription } from "./SectionDescription/SectionDescr
 export { default as InspirationImage } from "./InspirationImage/InspirationImage"
 export { default as ProductsCard } from "./ProductsCard/ProductsCard"
 export { default as ServicesCard } from "./ServicesCard/ServicesCard"
+export { default as SmallTitle } from "./SmallTitle/SmallTitle"
+export { default as SocialIcon } from "./SocialIcon/SocialIcon"
+export { default as FooterImage } from "./FooterImage/FooterImage"
