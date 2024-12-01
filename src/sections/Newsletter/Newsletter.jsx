@@ -12,7 +12,7 @@ const Newsletter = () => {
             />
             <SectionDescription
                 styles={`w-[280px] mt-[10px] mb-[25px] text-center 
-                sm:w-auto md:mb-[50px]`}
+                sm:w-[514px] md:mb-[50px]`}
                 content={"Sign up to receive inspiration, product updates, and special offers from our team."}
             />
             {/* Newsletter form */}
