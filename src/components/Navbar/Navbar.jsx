@@ -31,7 +31,7 @@ const Navbar = () => {
                 md:items-center md:gap-[35px] lg:gap-[70px]">
                     <NavLink 
                         content={"Home"}
-                        linkRef={"home"}
+                        linkRef={"hero"}
                     />
                     <NavLink 
                         content={"Collection"}
@@ -69,7 +69,7 @@ const Navbar = () => {
                     >
                         <NavLink 
                             content={"Home"}
-                            linkRef={"home"}
+                            linkRef={"hero"}
                         />
                         <NavLink 
                             content={"Collection"}
